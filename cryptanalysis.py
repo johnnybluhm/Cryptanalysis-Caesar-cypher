@@ -6,6 +6,11 @@ def getProb(char,cipher):
 
     #remove spaces and make lower case
     cipher = cipher.replace(" ", "").lower()
+    cipher = cipher.replace(",","")
+    cipher = cipher.replace(".","")
+    cipher = cipher.replace("!","")
+    cipher = cipher.replace("?","")
+    cipher = cipher.replace(":","")
 
     #array of character frequencies
     char_freq_array = [0.080, 0.015,0.030,0.040, 0.130,0.020,0.015,0.060,0.065,0.005,0.005,0.035,0.030,0.070,0.080,0.020,0.002,0.065,0.060,0.090,0.030,0.010,0.015,0.005,0.020,0.002]
